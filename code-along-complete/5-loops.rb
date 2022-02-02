@@ -9,14 +9,14 @@
 
 # Practically speaking, we are almost always looping through an array
 # and doing something with each element of the array.
-things_that_would_be_better_with_bacon = ["tacos", "cheeseburgers", "donuts"]
+things_that_would_be_better_with_bacon = ["tacos", "cheeseburgers", "donuts","cheese", "flowers"]
 
 # The OLD WAY
 
 # We could "add bacon" to each element individually:
-"bacon " + things_that_would_be_better_with_bacon[0]
-"bacon " + things_that_would_be_better_with_bacon[1]
-"bacon " + things_that_would_be_better_with_bacon[2]
+# "bacon " + things_that_would_be_better_with_bacon[0]
+# "bacon " + things_that_would_be_better_with_bacon[1]
+# "bacon " + things_that_would_be_better_with_bacon[2]
 
 # The NEW WAY
 
@@ -25,3 +25,5 @@ things_that_would_be_better_with_bacon = ["tacos", "cheeseburgers", "donuts"]
 for thing in things_that_would_be_better_with_bacon
   puts "bacon " + thing
 end
+
+

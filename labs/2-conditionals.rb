@@ -13,6 +13,7 @@
 # that reads "YOU LOSE!", otherwise, write a message that
 # reads "THE POINT IS {number}"
 
+
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)
@@ -25,3 +26,28 @@
 # "i would like #{5} tacos"
 # We can specify multiple conditions with || (OR) and && (AND)
 # if dinner == "tacos" || dinner == "pizza"
+
+
+
+dice1 = rand(1..6)
+puts dice1
+
+dice2 = rand(1..6)
+puts dice2
+
+total = dice1 + dice2
+puts "The total is: #{total}"
+
+# if total is 7,11 = win
+if total == 7 ||total == 11
+puts "you win!!"
+
+# if total is 2,3,12 = lose
+elsif total == 2 || total == 3 || total ==12
+puts "You Lose!"
+
+# if anyting else = the point total is 
+else 
+puts "The Point Is: #{total}"
+
+end
